@@ -4,9 +4,9 @@ layout: BlogHome
 icon: home
 title: Vinci博客主页
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: 你博客的名称
+heroText: VinciGeek
 heroFullScreen: true
-tagline: 你可以在这里放置你的口号与标语
+tagline: ——梦想是成为一名极客
 projects:
   - icon: project
     name: 项目名称
@@ -39,5 +39,5 @@ projects:
     link: https://你的自定义链接
 
 
-footer: 自定义你的页脚文字
+footer: 唯有热爱可抵岁月漫长
 ---

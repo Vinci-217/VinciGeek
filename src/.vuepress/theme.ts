@@ -12,7 +12,7 @@ export default hopeTheme({
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "/assets/icon/icon.png",
 
   
   repo: "Vinci-217",
@@ -33,7 +33,7 @@ export default hopeTheme({
 
   // 博客相关
   blog: {
-    description: "一个前端开发者",
+    description: "一名技术爱好者",
     intro: "/intro.html",
     medias: {
       Email: "mailto:info@example.com",
