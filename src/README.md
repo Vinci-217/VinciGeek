@@ -3,10 +3,11 @@ home: true
 layout: BlogHome
 icon: home
 title: Vinci博客主页
-heroImage: https://theme-hope-assets.vuejs.press/logo.svg
+heroImage: https://s2.loli.net/2024/05/26/sKzuPWCk2o86jDJ.png
 heroText: VinciGeek
 heroFullScreen: true
-tagline: ——梦想是成为一名极客
+bgImage: https://s2.loli.net/2024/05/26/VWIenT4cqShtC1Y.jpg
+tagline: ——“且将新火试新茶，诗酒乘年华”
 projects:
   - icon: project
     name: 项目名称

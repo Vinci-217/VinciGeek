@@ -12,4 +12,12 @@ export default defineUserConfig({
 
   // 和 PWA 一起启用
   // shouldPrefetch: false,
+
+  head: [
+    // 设置 favor.ico，.vuepress/public 下
+    [
+      'link', { rel: 'icon', href: 'assets/icon/icon.png' }
+    ],
+    ['meta', {name: 'referrer', content: 'no-referrer-when-downgrade'}],
+  ],
 });
