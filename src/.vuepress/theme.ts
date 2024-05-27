@@ -74,6 +74,8 @@ export default hopeTheme({
     //   serverURL: "https://waline-comment.vuejs.press",
     // },
 
+    searchPro: true,
+
     copyCode: {},
 
     comment: {
