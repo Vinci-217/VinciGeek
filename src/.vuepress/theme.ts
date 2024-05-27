@@ -28,7 +28,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: '本页总访问量<span id="busuanzi_value_site_pv"></span>次',
+  footer: '我也是有底线的',
   displayFooter: true,
 
   // 博客相关
