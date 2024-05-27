@@ -28,7 +28,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: "默认页脚",
+  footer: '我也是有底线的-.-',
   displayFooter: true,
 
   // 博客相关

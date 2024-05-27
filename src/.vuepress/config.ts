@@ -19,5 +19,8 @@ export default defineUserConfig({
       'link', { rel: 'icon', href: 'assets/icon/icon.png' }
     ],
     ['meta', {name: 'referrer', content: 'no-referrer-when-downgrade'}],
+    ['script', { async: true, src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }],
+
+    
   ],
 });
