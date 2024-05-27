@@ -2,11 +2,11 @@ import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
 
 export default defineUserConfig({
-  base: "/Vinci/",
+  base: "/VinciGeek/",
 
   lang: "zh-CN",
-  title: "Vinci",
-  description: "Vinci的博客",
+  title: "VinciGeek",
+  description: "VinciGeek",
 
   theme,
 
