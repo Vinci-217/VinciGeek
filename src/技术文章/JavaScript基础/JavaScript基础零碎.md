@@ -1,10 +1,8 @@
 # JavaScript基础零碎
 
 - 在函数外声明的变量具有全局作用于，在函数内部声明的变量只在函数内部有效
-- 
 
-
-## 关于`[ ]`和`{ }`的使用
+## 关于 `[ ]`和 `{ }`的使用
 
 ### `{}` 的用法
 
@@ -66,3 +64,24 @@ let a = "hello ${name}!";
 ```
 
 ## 关于 `=` 和 `:` 的区别
+
+
+## 关于 `==` 和 `===` 区别
+
+- 两个等号：两个等号进行的是 宽松 比较（loose equality），在比较前会进行类型转换。如果两个值的类型不同，JavaScript 会尝试将它们转换为相同的类型，然后再进行比较。
+
+```javascript
+console.log(5 == '5'); // true，因为字符串 '5' 被转换成了数字 5
+console.log(null == undefined); // true，因为 null 和 undefined 被认为相等
+console.log('' == 0); // true，因为空字符串被转换成了数字 0
+console.log('0' == false); // true，因为 '0' 被转换成了数字 0，而 false 也被转换成了数字 0
+```
+
+- 三个等号：三个等号进行的是 严格 比较（strict equality），比较时不会进行类型转换，只有当两个值的类型和内容都相同时才会返回 true。
+
+```javascript
+console.log(5 === '5'); // false，因为类型不同，数字 5 和字符串 '5' 不相等
+console.log(null === undefined); // false，因为类型不同
+console.log('' === 0); // false，因为类型不同
+console.log('0' === false); // false，因为类型不同
+```
