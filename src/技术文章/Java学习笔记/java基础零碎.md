@@ -64,3 +64,106 @@ int [] b = Arrays.copyof(a,a.length);
 - 在Java中，对于对象的方法传递，并不是引用传递，而是按值传递。但是可以通过传递对象的方式修改对象的属性和值。
 - 在方法重载中，返回类型不是方法签名的一部分。也就是说不能有两个名字相同，参数类型相同，但有不同返回类型的方法。
 - 在一个构造器中可以使用this来调用另一个构造器
+
+## hashCode和equals方法
+
+- `hashCode`方法返回对象的哈希码值，它是一个整数。哈希码通常用于散列表中的散列算法，例如Java中的 `HashMap`、`HashSet`等集合。
+- `equals`方法用于判断两个对象是否相等。它是从 `Object`类继承而来的，默认实现是比较对象的内存地址。
+- 根据Java的规范，`hashCode`和 `equals`方法必须满足以下条件：
+  1. **如果两个对象相等（即 `equals(Object obj)` 返回 `true`），那么它们的哈希码值必须相等**。即对于任何两个对象 `a` 和 `b`，如果 `a.equals(b)` 为 `true`，那么 `a.hashCode() == b.hashCode()` 也必须为 `true`。
+  2. **如果两个对象的哈希码值相等，它们并不一定相等**。即对于任何两个对象 `a` 和 `b`，如果 `a.hashCode() == b.hashCode()` 为 `true`，`a.equals(b)` 不一定为 `true`。
+  3. **如果对象在equals比较中不相等，那么它们的hashCode值不要求一定不相等，但好的hashCode实现应该尽量避免这种情况**。为了提高散列表的性能，不相等的对象尽量具有不同的哈希码值。
+
+## 异常
+
+**在Java编程中，异常分为两大类：****checked异常**和**unchecked异常**。这两类异常的主要区别在于它们的处理方式以及在编译时和运行时的行为。下面是详细的解释：
+
+### Checked异常
+
+#### 定义
+
+**Checked异常是那些在编译时就必须处理的异常。这意味着，如果某个方法可能会抛出checked异常，那么该方法要么必须在方法签名中声明该异常，要么必须在方法体内通过try-catch块进行处理。**
+
+#### 特点
+
+* **编译时检查**：编译器会强制检查这些异常是否被处理。
+* **必须处理**：如果不处理checked异常，代码将无法通过编译。
+* **典型例子**：`IOException`, `SQLException`, `ClassNotFoundException` 等。
+
+#### 示例代码
+
+```
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+
+public class CheckedExceptionExample {
+    public static void main(String[] args) {
+        try {
+            File file = new File("non_existent_file.txt");
+            FileReader fr = new FileReader(file);
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
+
+**在上面的例子中，**`FileNotFoundException`是一个checked异常，必须通过try-catch块处理，否则编译器会报错。
+
+### Unchecked异常
+
+#### 定义
+
+**Unchecked异常是那些在编译时不强制要求处理的异常。它们通常是由程序中的逻辑错误或程序员的疏忽引起的。这类异常在运行时才会抛出。**
+
+#### 特点
+
+* **运行时检查**：编译器不强制检查这些异常是否被处理。
+* **不强制处理**：程序员可以选择处理或不处理unchecked异常。
+* **典型例子**：`NullPointerException`, `ArrayIndexOutOfBoundsException`, `ArithmeticException` 等。
+
+#### 示例代码
+
+```
+public class UncheckedExceptionExample {
+    public static void main(String[] args) {
+        int[] numbers = {1, 2, 3};
+        System.out.println(numbers[3]); // 这将抛出ArrayIndexOutOfBoundsException
+    }
+}
+```
+
+**在上面的例子中，**`ArrayIndexOutOfBoundsException`是一个unchecked异常，程序不会在编译时提醒处理这个异常，但它会在运行时抛出。
+
+### 异常的继承关系
+
+**在Java的异常层次结构中：**
+
+* ```
+  java.lang.Throwable
+  ```
+
+  **是所有异常的根类。**
+
+  * ```
+    java.lang.Exception
+    ```
+
+    **是所有checked异常的父类。**
+
+    * `java.lang.RuntimeException`是所有unchecked异常的父类。
+
+**因此，checked异常是** `Exception`的直接子类（但不包括 `RuntimeException`及其子类），而unchecked异常是 `RuntimeException`及其子类。
+
+## Iterable接口和Iteator接口
+
+1. **用途**：
+   * `Iterable`：定义一个集合可以被迭代，但不提供具体的迭代实现。实现 `Iterable`接口的类可以使用增强型for循环。
+   * `Iterator`：提供具体的迭代功能，可以在迭代过程中删除元素。
+2. **方法**：
+   * `Iterable`只有一个方法 `iterator()`，返回一个 `Iterator`对象。
+   * `Iterator`有三个方法：`hasNext()`，`next()`，和 `remove()`，用于遍历和修改集合。
+3. **关系**：
+   * **实现** `Iterable`接口的类必须提供一个 `iterator()`方法，该方法返回一个 `Iterator`对象。
+   * `Iterator`接口提供了实际的迭代行为，是遍历集合元素的工具。
