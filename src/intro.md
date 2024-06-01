@@ -2,14 +2,12 @@
 icon: circle-info
 cover: /assets/images/cover3.jpg
 ---
-
 # 关于 | About
 
 ## 我是谁 | Who Am I ?
 
 - 一名计算机专业学生
 - 一名程序员
-- 一名不知名AIGC创作者
 - 一名极客
 - 一条善良的灵魂
 - 一个喜欢思考和总结的人

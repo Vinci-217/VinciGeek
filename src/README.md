@@ -7,7 +7,7 @@ heroImage: https://s2.loli.net/2024/05/26/sKzuPWCk2o86jDJ.png
 heroText: VinciGeek
 heroFullScreen: true
 bgImage: https://s2.loli.net/2024/05/26/VWIenT4cqShtC1Y.jpg
-tagline: ——“且将新火试新茶，诗酒乘年华”
+tagline: “无论过去怎样，以后如何，至少现在我们在努力让生活变得更好，不是吗？”
 projects:
   - icon: project
     name: 项目名称
@@ -42,3 +42,21 @@ projects:
 
 footer: 唯有热爱可抵岁月漫长 本站总访问量<span id="busuanzi_value_site_pv"></span>次 本站访客数<span id="busuanzi_value_site_uv"></span>人次
 ---
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const taglines = [
+    "“且将新火试新茶，诗酒趁年华”",
+    "“天生我材必有用，千金散尽还复来”",
+    "“长风破浪会有时，直挂云帆济沧海”",
+    "“海内存知己，天涯若比邻”"
+  ];
+
+  const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
+  const taglineElement = document.querySelector('.hero .description');
+
+  if (taglineElement) {
+    taglineElement.textContent = randomTagline;
+  }
+});
+</script>

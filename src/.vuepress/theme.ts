@@ -39,12 +39,6 @@ export default hopeTheme({
       Email: "mailto:info@example.com",
 
       GitHub: "https://example.com",
-
-
-      VuePressThemeHope: [
-        "https://theme-hope.vuejs.press",
-        "https://theme-hope-assets.vuejs.press/logo.svg",
-      ],
     },
   },
 
