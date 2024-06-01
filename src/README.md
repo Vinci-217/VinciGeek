@@ -44,19 +44,21 @@ footer: 唯有热爱可抵岁月漫长 本站总访问量<span id="busuanzi_valu
 ---
 
 <script>
-document.addEventListener("DOMContentLoaded", function () {
-  const taglines = [
-    "“且将新火试新茶，诗酒趁年华”",
-    "“天生我材必有用，千金散尽还复来”",
-    "“长风破浪会有时，直挂云帆济沧海”",
-    "“海内存知己，天涯若比邻”"
-  ];
+if (typeof document !== 'undefined') {
+  document.addEventListener("DOMContentLoaded", function () {
+    const taglines = [
+      "——“且将新火试新茶，诗酒乘年华”",
+      "——“天生我材必有用，千金散尽还复来”",
+      "——“长风破浪会有时，直挂云帆济沧海”",
+      "——“海内存知己，天涯若比邻”"
+    ];
 
-  const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
-  const taglineElement = document.querySelector('.hero .description');
+    const randomTagline = taglines[Math.floor(Math.random() * taglines.length)];
+    const taglineElement = document.querySelector('.hero .description');
 
-  if (taglineElement) {
-    taglineElement.textContent = randomTagline;
-  }
-});
+    if (taglineElement) {
+      taglineElement.textContent = randomTagline;
+    }
+  });
+}
 </script>
