@@ -1,11 +1,11 @@
-```
+---
 category:
   - 技术文章
 tag:
   - Redis
   - 数据库
   - 语法基础
-```
+---
 # Redis学习笔记
 
 ## Redis是什么？
