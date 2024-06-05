@@ -27,50 +27,47 @@ export default navbar([
   //   link: "https://theme-hope.vuejs.press/zh/",
   // },
   // navbar: [
-      {
-        text: "技术文章",
-        link: "/技术文章/README.md",
-        icon: "code",
-        // 会在 `/zh/faq` 开头的路径激活
-        // 所以当你前往 `/zh/faq/xxx.html` 时也会激活
-        // activeMatch: "^/zh/faq",
-      },
-      {
-        text: "学习方法",
-        link: "/学习方法/README.md",
-        icon: "book"
-      },
-      // {
-      //   text: "处世经验",
-      //   link: "/处世经验/README.md",
-      //   icon: "lightbulb",
-      //   // 仅在 `/zh/guide/` 激活
-      //   // activeMatch: "^/zh/guide/$",
-      // },
-      // {
-      //   text: "个人日记",
-      //   link: "/个人日记/README.md",
-      //   icon: "star"
-      // },
-      {
-        text: "代码之外",
-        link: "/代码之外/README.md",
-        icon: "pen-nib"
-      },
-      // {
-      //   text: "恋爱话术",
-      //   link: "/恋爱话术/README.md",
-      //   icon: "heart"
-      // },
-      // {
-      //   text: "每日一言",
-      //   link: "/每日一言/README.md",
-      //   icon: "cube"
-      // },
-      {
-        text: "留言墙",
-        link: "/留言墙/README.md",
-        icon: "hand-holding-heart"
-      },
-    // ],
+  {
+    text: "技术文章",
+    link: "/技术文章/README.md",
+    icon: "code",
+
+  },
+  {
+    text: "学习方法",
+    link: "/学习方法/README.md",
+    icon: "book"
+  },
+
+  {
+    text: "代码之外",
+    link: "/代码之外/README.md",
+    icon: "pen-nib"
+  },
+
+
+  {
+    text: "留言墙",
+    link: "/留言墙/README.md",
+    icon: "hand-holding-heart"
+  },
+
+  {
+    text: "友情链接",
+    icon: "link",
+    children: [
+      { text: "VuePress-Theme-Hope", link: "https://theme-hope.vuejs.press/zh/" },
+      { text: "GitHub", link: "https://github.com" },
+      { text: "廖雪峰Java教程", link: "https://www.liaoxuefeng.com/wiki/1252599548343744" },
+      { text: "JavaGuide", link: "https://javaguide.cn/home.html" },
+      { text: "小林Coding", link: "https://xiaolincoding.com/" },
+      { text: "力扣", link: "https://leetcode.cn/problemset/" },
+      { text: "代码随想录", link: "https://www.programmercarl.com/" },
+      
+
+    ],
+  },
+
+
+  // ],
 ]);

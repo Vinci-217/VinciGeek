@@ -1,6 +1,7 @@
 import { hopeTheme } from "vuepress-theme-hope";
 import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
+import { path } from '@vuepress/utils'
 
 export default hopeTheme({
   // hostname: "https://mister-hope.github.io",
@@ -83,6 +84,7 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
+    
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
