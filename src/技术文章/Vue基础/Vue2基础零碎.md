@@ -1,3 +1,10 @@
+```
+category:
+  - 技术文章
+tag:
+  - Vue2
+  - 语法基础
+```
 # Vue2基础零碎
 
 > ![warning]

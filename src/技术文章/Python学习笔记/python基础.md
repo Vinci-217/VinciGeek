@@ -1,3 +1,10 @@
+```
+category:
+  - 技术文章
+tag:
+  - Python
+  - 语法基础
+```
 # python从入门到实践
 
 ## 变量

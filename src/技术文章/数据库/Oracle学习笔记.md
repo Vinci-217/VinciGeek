@@ -1,3 +1,11 @@
+```
+category:
+  - 技术文章
+tag:
+  - Oracle
+  - 数据库
+  - 语法基础
+```
 # Oracle数据库
 
 > [!tip]
