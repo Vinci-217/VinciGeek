@@ -63,8 +63,6 @@ export default navbar([
       { text: "小林Coding", link: "https://xiaolincoding.com/" },
       { text: "力扣", link: "https://leetcode.cn/problemset/" },
       { text: "代码随想录", link: "https://www.programmercarl.com/" },
-      
-
     ],
   },
 
