@@ -2,7 +2,7 @@
 title: Todo List
 
 sidebar: false
-
+article: false
 breadcrumb: false
 pageInfo: false
 contributors: false
