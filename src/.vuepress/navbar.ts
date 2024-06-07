@@ -51,6 +51,13 @@ export default navbar([
     link: "/留言墙/README.md",
     icon: "hand-holding-heart"
   },
+  {
+    text: "实验室",
+    icon: "flask",
+    children: [
+      { text: 'Todo List', link: '/实验室/todo.html' }
+    ],
+  },
 
   {
     text: "友情链接",
@@ -65,6 +72,7 @@ export default navbar([
       { text: "代码随想录", link: "https://www.programmercarl.com/" },
     ],
   },
+
 
 
   // ],
