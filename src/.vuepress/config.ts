@@ -5,8 +5,8 @@ export default defineUserConfig({
   base: "/VinciGeek/",
 
   lang: "zh-CN",
-  title: "VinciGeek",
-  description: "VinciGeek",
+  title: "Vinci",
+  description: "Vinci",
 
   theme,
 
@@ -20,7 +20,5 @@ export default defineUserConfig({
     ],
     ['meta', {name: 'referrer', content: 'no-referrer-when-downgrade'}],
     ['script', { async: true, src: '//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js' }],
-
-    
   ],
 });

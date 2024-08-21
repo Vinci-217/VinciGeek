@@ -54,8 +54,6 @@ backtotop: false
   <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=365 height=210 src="//music.163.com/outchain/player?type=0&id=8934718801&auto=1&height=430"></iframe>
 </div>
 
-
-
 <script>
 export default {
   data() {

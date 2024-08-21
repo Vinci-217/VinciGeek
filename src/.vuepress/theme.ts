@@ -7,7 +7,7 @@ export default hopeTheme({
   // hostname: "https://mister-hope.github.io",
 
   author: {
-    name: "VinciGeek",
+    name: "Vinci",
     // url: "https://mister-hope.com",
   },
 
@@ -15,7 +15,6 @@ export default hopeTheme({
 
   logo: "/assets/icon/icon.png",
 
-  
   repo: "Vinci-217",
   repoLabel: "GitHub",
   repoDisplay: true,
@@ -29,7 +28,7 @@ export default hopeTheme({
   sidebar,
 
   // 页脚
-  footer: '我也是有底线的',
+  footer: "我也是有底线的",
   displayFooter: true,
 
   // 博客相关
@@ -37,9 +36,9 @@ export default hopeTheme({
     description: "一名技术爱好者",
     intro: "/intro.html",
     medias: {
-      Email: "mailto:info@example.com",
+      Email: "1341060890@qq.com",
 
-      GitHub: "https://example.com",
+      GitHub: "https://github.com/Vinci-217",
     },
   },
 
@@ -84,7 +83,6 @@ export default hopeTheme({
     components: {
       components: ["Badge", "VPCard"],
     },
-    
 
     // 此处开启了很多功能用于演示，你应仅保留用到的功能。
     mdEnhance: {
@@ -118,101 +116,6 @@ export default hopeTheme({
       tabs: true,
       tasklist: true,
       vPre: true,
-
-      // 在启用之前安装 chart.js
-      // chart: true,
-
-      // insert component easily
-
-      // 在启用之前安装 echarts
-      // echarts: true,
-
-      // 在启用之前安装 flowchart.ts
-      // flowchart: true,
-
-      // gfm requires mathjax-full to provide tex support
-      // gfm: true,
-
-      // 在启用之前安装 katex
-      // katex: true,
-
-      // 在启用之前安装 mathjax-full
-      // mathjax: true,
-
-      // 在启用之前安装 mermaid
-      // mermaid: true,
-
-      // playground: {
-      //   presets: ["ts", "vue"],
-      // },
-
-      // 在启用之前安装 reveal.js
-      // revealJs: {
-      //   plugins: ["highlight", "math", "search", "notes", "zoom"],
-      // },
-
-      // 在启用之前安装 @vue/repl
-      // vuePlayground: true,
-
-      // install sandpack-vue3 before enabling it
-      // sandpack: true,
     },
-
-    // 如果你需要 PWA。安装 @vuepress/plugin-pwa 并取消下方注释
-    // pwa: {
-    //   favicon: "/favicon.ico",
-    //   cacheHTML: true,
-    //   cacheImage: true,
-    //   appendBase: true,
-    //   apple: {
-    //     icon: "/assets/icon/apple-icon-152.png",
-    //     statusBarColor: "black",
-    //   },
-    //   msTile: {
-    //     image: "/assets/icon/ms-icon-144.png",
-    //     color: "#ffffff",
-    //   },
-    //   manifest: {
-    //     icons: [
-    //       {
-    //         src: "/assets/icon/chrome-mask-512.png",
-    //         sizes: "512x512",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-mask-192.png",
-    //         sizes: "192x192",
-    //         purpose: "maskable",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-512.png",
-    //         sizes: "512x512",
-    //         type: "image/png",
-    //       },
-    //       {
-    //         src: "/assets/icon/chrome-192.png",
-    //         sizes: "192x192",
-    //         type: "image/png",
-    //       },
-    //     ],
-    //     shortcuts: [
-    //       {
-    //         name: "Demo",
-    //         short_name: "Demo",
-    //         url: "/demo/",
-    //         icons: [
-    //           {
-    //             src: "/assets/icon/guide-maskable.png",
-    //             sizes: "192x192",
-    //             purpose: "maskable",
-    //             type: "image/png",
-    //           },
-    //         ],
-    //       },
-    //     ],
-    //   },
-    // },
   },
 });

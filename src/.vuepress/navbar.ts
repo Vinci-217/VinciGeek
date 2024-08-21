@@ -34,12 +34,6 @@ export default navbar([
 
   },
   {
-    text: "学习方法",
-    link: "/学习方法/README.md",
-    icon: "book"
-  },
-
-  {
     text: "代码之外",
     link: "/代码之外/README.md",
     icon: "pen-nib"
