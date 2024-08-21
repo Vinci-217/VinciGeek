@@ -4,7 +4,7 @@ layout: BlogHome
 icon: home
 title: Hi, I'm Vinci
 heroImage: https://s2.loli.net/2024/05/26/sKzuPWCk2o86jDJ.png
-heroText: VinciGeek
+heroText: Vinci
 heroFullScreen: true
 bgImage: https://s2.loli.net/2024/05/26/VWIenT4cqShtC1Y.jpg
 tagline: 陪你看樱花的人，一定比樱花更浪漫吧(*^▽^*)
