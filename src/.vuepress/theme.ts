@@ -10,6 +10,7 @@ export default hopeTheme({
     name: "Vinci",
     // url: "https://mister-hope.com",
   },
+  pure: true,
 
   iconAssets: "fontawesome-with-brands",
 
